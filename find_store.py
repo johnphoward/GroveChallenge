@@ -64,7 +64,7 @@ class LocationFinder:
 
     @staticmethod
     def output_information(store_text, distance, units, output_type=TEXT):
-        distance = round(distance, 2)
+        distance = round(distance, 3)
         if output_type == TEXT:
             print('Nearest store address: {address}'.format(address=store_text))
             print('Distance: {distance} {units}.'.format(distance=distance, units=units))

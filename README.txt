@@ -1,4 +1,5 @@
 My solution to the find-store problem is a Python 3 script that finds the nearest store as follows:
+
 1) Read in the CSV file.
 
 Using Python's built-in csv module, I read the CSV file line by line. From each line, I created a tuple
@@ -40,3 +41,11 @@ By adding a few possible arguments to the ArgumentParser and then adding a handl
 class, I could pass in any of the specified arguments as parameters, call all the above logic, and then output the
 information in the requested format.
 
+
+To run the code, execute the following in a terminal:
+
+python3 find_store.py --address="218 Hemenway Street Boston" [--units=km|mi] [--output=text|json]
+
+or
+
+python3 find_store.py --zip=94028 [--units=km|mi] [--output=text|json]
